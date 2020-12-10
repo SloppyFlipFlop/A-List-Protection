@@ -52,33 +52,33 @@ h1 {
 h3 {
     text-align: center;
     font-size: 2.5rem;
-    color: whitesmoke;
+    color: #000000;
 }
 
 h4 {
     font-size: 1.8rem;
-    color: whitesmoke;
+    color: #000000;
 }
 
 p,
 li {
     font-size: 2rem;
     line-height: 1.5;
-    color: whitesmoke;
+    color: white;
 }
 
 nav,
 article,
 aside,
 footer {
-    background-color: black;
+    background-color: #366190;
     padding: 5%;
 }
 
 nav {
     height: 50px;
-    border: solid 5px #BD8400;
-    background-color: black;
+    border: solid 5px #AB0025;
+    background-color: #366190;
     display: flex;
     margin-bottom: 10px;
     position: sticky;
@@ -90,7 +90,7 @@ nav ul {
     list-style: none;
     flex: 2;
     display: flex;
-    color: #D99504;
+    color: #AB0025;
 }
 
 nav li {
@@ -151,7 +151,7 @@ article {
 aside {
     flex: 1;
     margin-left: 10px;
-    background-color: #C4BCC1;
+    background-color: #366190;
 }
 
 aside li {
@@ -170,6 +170,7 @@ footer {
     margin-right: auto;
     width: 50%;
     height: 50%;
+    background-color: #366190;
 }
 
 ::-webkit-scrollbar {
@@ -185,7 +186,7 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: ;
+    background: #c00000;
 }
 
 .ad-wrapper {
