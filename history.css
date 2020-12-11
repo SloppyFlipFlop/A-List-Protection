@@ -217,7 +217,7 @@ h1 {
 .r,
 .y {
     animation: h 4s ease forwards;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
 }
 
 .h {
