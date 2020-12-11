@@ -2,8 +2,7 @@
     --Footer-Background-Color: #1D4D9A;
     --Header-Background-color: #1D4D9A;
     --Special-Text-Color: #88B7D3;
-    --Box-Shadow: #056B9E;
-    --Website-Description-and-Contact-Background-Color: #437DDB;
+    --Background-Image-Height: 200px;
 }
 
 
@@ -34,7 +33,7 @@ header {
     display: flex;
     padding: 2px;
     margin: 0px;
-    font-family: 'Arvo', serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     z-index: 50;
 }
 
@@ -46,10 +45,13 @@ header * {
 header img {
     margin-left: 50px;
     height: 50px;
+    opacity: 1;
+    transition: all .2 ease-out;
 }
 
 header img:hover {
-    color: white;
+    opacity: 0.65;
+    transition: .3s ease-in;
 }
 
 nav {
@@ -60,9 +62,13 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
+<<<<<<< HEAD
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+=======
     font-size: 1.1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
+>>>>>>> c520b953e076a0264520109c1f68d83b2f1080a0
 }
 
 header form {
@@ -149,10 +155,162 @@ footer a:hover {
 }
 
 body {
-    background-color: #037abb;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%234f8ef1' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%2373a0e8' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%2393b1e2' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23afc2df' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23c8d1e0' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23dde0e5' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23eeeeee' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #1816aa;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%231816aa'/%3E%3Cstop offset='1' stop-color='%2373dbf0'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23adff56' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23adff56' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23adff56' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23adff56' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
     margin: 0px;
 }
 
 
 /* ^^^ Basic Website CSS Code Above ^^^ */
+
+
+/* Main Body CSS Code */
+
+
+/* Top Image Layout */
+
+.Top-image {
+    font-family: 'JetBrains Mono', monospace;
+    max-width: 80vw;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(images/Background-example.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    letter-spacing: 5px;
+}
+
+.Top-image ul {
+    padding-left: 12%;
+}
+
+h1 {
+    font-size: 5em;
+    display: inline-block;
+}
+
+@keyframes h {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        -ms-transform: translate(250px, 0px);
+        /* IE 9 */
+        -webkit-transform: translate(250px, 0px);
+        /* Safari */
+        transform: translate(250px, 0px);
+        /* Standard syntax */
+    }
+    from {
+        color: lightblue;
+    }
+    to {
+        color: white;
+    }
+    opacity:1;
+}
+
+.i,
+.s,
+.t,
+.h,
+.o,
+.r,
+.y {
+    animation: h 4s ease forwards;
+    animation-iteration-count: 1;
+}
+
+.h {
+    animation-delay: 0.4s;
+    transform: rotate3d(10, 10, 10, 65deg);
+}
+
+.i {
+    animation-delay: 0.3s;
+}
+
+.s {
+    animation-delay: 0.2s;
+}
+
+.t {
+    animation-delay: 0.1s;
+}
+
+.o {
+    animation-delay: 0s;
+    -webkit-transform: rotateZ(20deg);
+    /* Safari */
+    transform: rotateZ(20deg);
+}
+
+.r {
+    animation-delay: -0.1s;
+    -webkit-transform: rotateZ(20deg);
+    /* Safari */
+    transform: rotateZ(20deg);
+}
+
+.y {
+    animation-delay: -0.2s;
+    -webkit-transform: rotateZ(20deg);
+    /* Safari */
+    transform: rotateZ(20deg);
+}
+
+
+/* ^^^ Top Image Layout ^^^ */
+
+
+/* About Us layout */
+
+.About-Us-Summary-Area {
+    border: 1px soild black;
+    border-radius: 1rem;
+    background-color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.About-Us-Summary-Area h1 {
+    text-align: left;
+    margin-left: 25%;
+    color: var(--Special-Text-Color);
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 40px;
+}
+
+.Summary-Area {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 20px;
+}
+
+.Summary-Area .About-Us-Summary {
+    width: 50%;
+}
+
+.Summary-Area img {
+    width: 25%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 1rem;
+    opacity: 1;
+    transition: all .2 ease-out;
+}
+
+.Summary-Area img:hover {
+    opacity: 0.65;
+    transition: .3s ease-in;
+}
+
+
+/* ^^^ About Us layout ^^^ */
+
+
+/* ^^^ MainBody CSS Code ^^^ */
