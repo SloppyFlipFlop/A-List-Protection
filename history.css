@@ -62,7 +62,9 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
+    font-size: 1.1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
 }
 
 header form {
