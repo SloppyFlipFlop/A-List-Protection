@@ -1,232 +1,164 @@
+:root {
+    --Footer-Background-Color: #1D4D9A;
+    --Header-Background-color: #1D4D9A;
+    --Special-Text-Color: #88B7D3;
+    --Box-Shadow: #056B9E;
+    --Website-Description-and-Contact-Background-Color: #437DDB;
+}
+
+
+/* Basic Website CSS Code */
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
 html,
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
 }
 
-html {
-    font-size: 10px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23333333' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23383838' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%233d3d3d' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23424242' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23484848' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%234d4d4d' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-body {
-    width: 70%;
-    margin: 0 auto;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-p,
-input,
-li {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-p,
-input {
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-}
-
-h1 {
-    font-size: 3rem;
-    text-align: center;
+header {
+    background-color: var(--Header-Background-color);
     color: white;
-    text-shadow: 3px 3px 20px navy;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: calc(100% - 3px);
+    height: fit-content;
+    min-height: 3em;
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: flex;
+    padding: 2px;
+    margin: 0px;
+    font-family: 'Arvo', serif;
+    z-index: 50;
 }
 
-h3 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #000000;
+header * {
+    padding: 1px;
+    margin: 3px;
 }
 
-h4 {
-    font-size: 1.8rem;
-    color: #000000;
+header h1 {
+    color: var(--Special-Text-Color);
 }
 
-p,
-li {
-    font-size: 2rem;
-    line-height: 1.5;
+header h1:hover {
     color: white;
-}
-
-nav,
-article,
-aside,
-footer {
-    border: solid 5px white;
-    background-color: #366190;
-    padding: 5%;
 }
 
 nav {
-    height: 50px;
-    border: solid 5px white;
-    background-color: #366190;
-    display: flex;
-    margin-bottom: 10px;
-    position: sticky;
-    top: 0;
+    margin-left: auto;
+    margin-right: 10px;
 }
 
 nav ul {
-    padding: 0;
     list-style: none;
-    flex: 2;
     display: flex;
-    color: #AB0025;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-nav li {
-    display: inline;
-    text-align: center;
-    flex: 1;
-    align-items: center;
-}
-
-nav a {
-    display: inline-block;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    align-items: center;
-}
-
-nav form {
+header form {
     display: flex;
-    flex: 5;
-    align-items: center;
-    height: 100%;
-    padding: 0 2em;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+    flex-basis: fit-content;
 }
 
-input {
-    font-size: 2rem;
+header form input[type="search"] {
+    margin-top: 5px;
+    outline: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 30vw;
+    border-radius: 1em;
+    border: none;
+    padding: 2px;
+    padding-left: 20px;
+    flex-shrink: 3;
+    flex-grow: 4;
+    transition-property: border-radius;
+    transition-duration: 0.5s;
+}
+
+header form input[type="search"]:focus {
+    border-radius: 0em;
+}
+
+header form input[type="submit"] {
+    background: none;
+    outline: black;
+    border: none;
+    width: 40px;
     height: 40px;
+    margin-top: 8px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    border-radius: 5em;
 }
 
-input[type="search"] {
-    flex: 10;
-    border: solid 5px black;
-    size: 100px;
-    width: 555px;
+header form input[type="submit"]:hover {
+    background: lightblue;
+    border-radius: 5em;
 }
 
-input[type="submit"] {
-    flex: 1;
-    margin-left: initial;
-    background: black;
-    border: 0;
-    color: #e6e6e6;
-    size: initial;
-    width: 575px;
+header form svg {
+    width: 32px;
+    height: 32px;
 }
 
-main {
-    display: flex;
-}
 
-article {
-    flex: 4;
-}
-
-aside {
-    flex: 1;
-    margin-left: 10px;
-    background-color: #366190;
-}
-
-aside li {
-    padding-bottom: 10px;
-}
+/* Footer CSS Layout */
 
 footer {
-    margin-top: 10px;
-    text-align: center;
-    border: solid 5px #000000;
+    background-color: var(--Footer-Background-Color);
+    color: white;
+    width: calc(100% - 3px);
+    height: auto;
+    display: flex;
+    padding: 2px;
+    margin: 0px;
 }
 
-.src {
-    display: block;
+footer * {
+    padding: 1px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--Footer-Background-Color);
+}
+
+footer a {
+    color: var(--Special-Text-Color);
+}
+
+footer a:hover {
+    color: white;
+}
+
+.Creators {
+    float: right;
     margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 50%;
-    background-color: #366190;
+    margin-right: 5px;
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: black;
+body {
+    background-color: #287bff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%234f8ef1' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%2373a0e8' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%2393b1e2' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23afc2df' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23c8d1e0' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23dde0e5' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23eeeeee' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: hotpink;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #c00000;
-}
-
-.ad-wrapper {
-    height: 0;
-    overflow: hidden;
-    transition: height 0.66s ease-out;
-}
-
-.ad-wrapper.loaded {
-    height: 100px;
-}
-
-#navbar {
-    overflow: hidden;
-    background-color: black;
-    size: initial;
-    size: 10rem;
-}
-
-#navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-    font-size: 3rem;
-}
-
-.content {
-    padding: 16px;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.sticky+.content {
-    padding-top: 60px;
+    background: navy;
 }
 
 marquee {
-    font-size: 3rem;
-    color: white;
+    font-size: 2rem;
+    color: rgba(255, 0, 0, 0.808);
+    width: 10rem;
 }
