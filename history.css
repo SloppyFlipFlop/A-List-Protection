@@ -33,7 +33,7 @@ header {
     display: flex;
     padding: 2px;
     margin: 0px;
-    font-family: 'Arvo', serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     z-index: 50;
 }
 
@@ -62,9 +62,13 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
+<<<<<<< HEAD
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+=======
     font-size: 1.1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
+>>>>>>> c520b953e076a0264520109c1f68d83b2f1080a0
 }
 
 header form {
