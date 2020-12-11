@@ -49,9 +49,18 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    font-size: 1.3rem;
-    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
+}
+
+header img {
+    margin-left: 50px;
+    height: 50px;
+}
+
+header img:hover {
+    color: white;
 }
 
 header form {
@@ -111,6 +120,7 @@ header form svg {
 main {
     background-color: white;
     padding: 5px;
+    /* height: 100%; */
 }
 
 /* Footer CSS Layout */
