@@ -60,9 +60,18 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
+<<<<<<< HEAD
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+=======
     font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
     font-size: 1.5rem;
     color: white;
+>>>>>>> da0195462c7859984b2c2ab4f298e706978378c9
 }
 
 header form {
@@ -121,6 +130,13 @@ h3 {
     padding: 2rem;
 }
 
+h2 {
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    padding: 2rem;
+}
+
 h4 {
     font-size: 2rem;
     font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
@@ -169,11 +185,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: navy;
-}
-
-::-webkit-scrollbar-track {
-    background: navy;
+    color: navy;
 }
 
 marquee {
@@ -184,5 +196,253 @@ marquee {
 li {
     font-size: 2rem;
     color: black;
+<<<<<<< HEAD
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+li2 {
+    font-size: 2rem;
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 15rem;
+}
+
+li2 {
+    -webkit-animation: color-change 1s infinite;
+    -moz-animation: color-change 1s infinite;
+    -o-animation: color-change 1s infinite;
+    -ms-animation: color-change 1s infinite;
+    animation: color-change 1s infinite;
+}
+
+@-webkit-keyframes color-change {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: red;
+    }
+}
+
+@-moz-keyframes color-change {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: red;
+    }
+}
+
+@-ms-keyframes color-change {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: red;
+    }
+}
+
+@-o-keyframes color-change {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: red;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: red;
+    }
+}
+
+.src {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: navy
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: lightblue;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: lightblue;
+}
+
+.ad-wrapper {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.66s ease-out;
+}
+
+.ad-wrapper.loaded {
+    height: 100px;
+}
+
+
+/* Style the navbar */
+
+#navbar {
+    overflow: hidden;
+    background-color: black;
+    size: initial;
+    size: 10rem;
+}
+
+
+/* Navbar links */
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+
+/* Page content */
+
+.content {
+    padding: 16px;
+}
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+div,
+button {
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: inherit;
+    margin-left: 14rem;
+}
+
+div,
+button {
+    -webkit-animation: color-change 1s infinite;
+    -moz-animation: color-change 1s infinite;
+    -o-animation: color-change 1s infinite;
+    -ms-animation: color-change 1s infinite;
+    animation: color-change 1s infinite;
+}
+
+@-webkit-keyframes color-change {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: red;
+    }
+}
+
+@-moz-keyframes color-change {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: red;
+    }
+}
+
+@-ms-keyframes color-change {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: red;
+    }
+}
+
+@-o-keyframes color-change {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: red;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: red;
+    }
+=======
     font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+>>>>>>> da0195462c7859984b2c2ab4f298e706978378c9
 }
