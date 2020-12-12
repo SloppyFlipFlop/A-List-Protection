@@ -34,7 +34,7 @@ header {
     display: flex;
     padding: 2px;
     margin: 0px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
     z-index: 50;
 }
 
@@ -60,15 +60,9 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-<<<<<<< HEAD
-    font-family: Impact, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
     font-size: 1.5rem;
     color: white;
-=======
-    font-size: 1.1rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: uppercase;
->>>>>>> c520b953e076a0264520109c1f68d83b2f1080a0
 }
 
 header form {
@@ -82,7 +76,7 @@ header form {
 header form input[type="search"] {
     margin-top: 5px;
     outline: none;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
     width: 30vw;
     border-radius: 1em;
     border: none;
@@ -122,14 +116,14 @@ header form svg {
 
 h3 {
     font-size: 3rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
     color: white;
     padding: 2rem;
 }
 
 h4 {
     font-size: 2rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
 }
 
 
@@ -148,7 +142,7 @@ footer {
 footer * {
     padding: 1px;
     margin: 0px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
     background-color: var(--Footer-Background-Color);
 }
 
@@ -190,5 +184,5 @@ marquee {
 li {
     font-size: 2rem;
     color: black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
 }
