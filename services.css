@@ -3,6 +3,7 @@
     --Header-Background-color: #2E4661;
     --Special-Text-Color: #88B7D3;
     --Background-Image-Height: 200px;
+    --White-Background-Color: #F2EDEB;
 }
 
 
@@ -168,7 +169,7 @@ body {
     background: url(images/Security_Picture.png);
     background-repeat: no-repeat;
     background-size: cover;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
     margin-top: 20px;
     margin-right: 20px;
     margin-left: 20px;
@@ -176,7 +177,7 @@ body {
     border-radius: 1rem;
 }
 
-h1 {
+.Top-image h1 {
     font-size: 5em;
     display: inline-block;
 }
@@ -194,7 +195,7 @@ h1 {
         /* Standard syntax */
     }
     from {
-        color: #6FAAED;
+        color: var(--White-Background-Color);
     }
     to {
         color: #4C75A3;
@@ -202,13 +203,15 @@ h1 {
     /* opacity: 1; */
 }
 
+
+.S,
 .e,
 .r,
 .v,
 .i,
 .c,
-.e,
-.s {
+.e-2,
+.s-2 {
     animation: S 4s ease forwards;
     animation-iteration-count: 1;
 }
@@ -244,14 +247,14 @@ h1 {
     transform: rotateZ(20deg);
 }
 
-.e {
+.e-2 {
     animation-delay: -0.2s;
     -webkit-transform: rotateZ(20deg);
     /* Safari */
     transform: rotateZ(20deg);
 }
 
-.s {
+.s-2 {
     animation-delay: -0.3s;
     -webkit-transform: rotateZ(20deg);
     /* Safari */
