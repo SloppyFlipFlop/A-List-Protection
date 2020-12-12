@@ -62,18 +62,14 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-<<<<<<< HEAD
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
-=======
-    <<<<<<< HEAD font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    =======font-size: 1.1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
-    >>>>>>>c520b953e076a0264520109c1f68d83b2f1080a0
->>>>>>> da0195462c7859984b2c2ab4f298e706978378c9
 }
 
 header form {
