@@ -1,9 +1,12 @@
 :root {
     --Footer-Background-Color: #2E4661;
     --Header-Background-color: #2E4661;
+    --Body-Background-Color: #2E4661;
     --Special-Text-Color: #88B7D3;
     --Background-Image-Height: 200px;
     --White-Background-Color: #F2EDEB;
+    --White-Text-Color: #F2EDEB;
+    --Submit-Button-Hover-Effect: lightblue;
 }
 
 
@@ -24,7 +27,7 @@ body {
 
 header {
     background-color: var(--Header-Background-color);
-    color: white;
+    color: var(--White-Text-Color);
     width: calc(100% - 3px);
     height: fit-content;
     min-height: 3em;
@@ -34,7 +37,7 @@ header {
     display: flex;
     padding: 2px;
     margin: 0px;
-    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     z-index: 50;
 }
 
@@ -58,14 +61,19 @@ header img:hover {
 nav {
     margin-left: auto;
     margin-right: 10px;
+    padding-top: 10px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.1rem;
-    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
 }
 
@@ -106,23 +114,25 @@ header form input[type="submit"] {
     transition-property: background-color;
     transition-duration: 0.5s;
     border-radius: 3em;
+    margin-top: 15px;
 }
 
 header form input[type="submit"]:hover {
-    background: lightblue;
+    background: var(--Submit-Button-Hover-Effect);
     border-radius: 3em;
 }
 
 header form svg {
-    width: 32rem;
+    width: 32px;
     height: 32px;
 }
+
 
 /* Footer CSS Layout */
 
 footer {
     background-color: var(--Footer-Background-Color);
-    color: white;
+    color: var(--White-Text-Color);
     width: calc(100% - 3px);
     height: auto;
     display: flex;
@@ -142,7 +152,7 @@ footer a {
 }
 
 footer a:hover {
-    color: white;
+    color: var(--White-Text-Color);
 }
 
 .Creators {
@@ -152,34 +162,38 @@ footer a:hover {
 }
 
 body {
-    background-color: #2E4661;
+    background-color: var(--Body-Background-Color);
     margin: 0px;
 }
 
-/* Main Body CSS */
+
+/* ^^^ Basic Website CSS Code Above ^^^ */
 
 
 /* Top Image Layout */
 
 .Top-image {
     font-family: 'JetBrains Mono', monospace;
-    width: calc(100vw - 60px);
-    /* margin-left: auto;
-    margin-right: auto; */
-    background: url(images/Security_Picture.png);
+    width: calc(100vw - 50px);
+    background: var(--White-Background-Color);
+    color: var(--White-Background-Color);
+    /* background: url(images/Security_Picture.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    letter-spacing: 1px;
+    background-size: cover; */
+    letter-spacing: 5px;
     margin-top: 20px;
     margin-right: 20px;
     margin-left: 20px;
     border: 1px solid black;
     border-radius: 1rem;
+
+    padding-left: 10px;
 }
 
 .Top-image h1 {
     font-size: 5em;
     display: inline-block;
+
 }
 
 @keyframes S {
@@ -187,11 +201,11 @@ body {
         opacity: 0;
     }
     100% {
-        -ms-transform: translate(35vw, 0px);
+        -ms-transform: translate(30vw, 0px);
         /* IE 9 */
-        -webkit-transform: translate(35vw, 0px);
+        -webkit-transform: translate(30vw, 0px);
         /* Safari */
-        transform: translate(35vw, 0px);
+        transform: translate(30vw, 0px);
         /* Standard syntax */
     }
     from {
@@ -212,25 +226,41 @@ body {
 .c,
 .e-2,
 .s-2 {
-    animation: S 4s ease forwards;
+    animation: S 3s ease-in-out forwards;
     animation-iteration-count: 1;
 }
 
 .S {
     animation-delay: 0.4s;
-    transform: rotate3d(10, 10, 10, 65deg);
+    /* transform: rotate3d(10, 10, 10, 65deg); */
+
+    -webkit-transform: rotateZ(20deg);
+    /* Safari */
+    transform: rotateZ(20deg);
 }
 
 .e {
     animation-delay: 0.3s;
+
+    -webkit-transform: rotateZ(20deg);
+    /* Safari */
+    transform: rotateZ(20deg);
 }
 
 .r {
     animation-delay: 0.2s;
+
+    -webkit-transform: rotateZ(20deg);
+    /* Safari */
+    transform: rotateZ(20deg);
 }
 
 .v {
     animation-delay: 0.1s;
+
+    -webkit-transform: rotateZ(20deg);
+    /* Safari */
+    transform: rotateZ(20deg);
 }
 
 .i {
@@ -268,7 +298,7 @@ body {
     .packages{
         border: 1px soild black;
         border-radius: 1rem;
-        background-color: white;
+        background-color: var(--White-Background-Color);
         display: flex;
         margin: 10px 20px 10px 20px;
         padding: 10px;

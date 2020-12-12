@@ -1,8 +1,12 @@
 :root {
-    --Footer-Background-Color: #1D4D9A;
-    --Header-Background-color: #1D4D9A;
+    --Footer-Background-Color: #2E4661;
+    --Header-Background-color: #2E4661;
+    --Body-Background-Color: #2E4661;
     --Special-Text-Color: #88B7D3;
+    --Background-Image-Height: 200px;
     --White-Background-Color: #F2EDEB;
+    --White-Text-Color: #F2EDEB;
+    --Submit-Button-Hover-Effect: lightblue;
 }
 
 
@@ -23,7 +27,7 @@ body {
 
 header {
     background-color: var(--Header-Background-color);
-    color: white;
+    color: var(--White-Text-Color);
     width: calc(100% - 3px);
     height: fit-content;
     min-height: 3em;
@@ -33,7 +37,7 @@ header {
     display: flex;
     padding: 2px;
     margin: 0px;
-    font-family: 'Arvo', serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     z-index: 50;
 }
 
@@ -43,34 +47,34 @@ header * {
 }
 
 header img {
-    margin-left: 55px;
-    height: 65px;
+    margin-left: 50px;
+    height: 50px;
+    opacity: 1;
+    transition: all .2 ease-out;
 }
 
 header img:hover {
-    color: white;
+    opacity: 0.65;
+    transition: .3s ease-in;
 }
 
 nav {
     margin-left: auto;
-    margin-right: 9px;
+    margin-right: 10px;
+    padding-top: 10px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.1rem;
-    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
-}
-
-header img {
-    margin-left: 50px;
-    height: 50px;
-}
-
-header img:hover {
-    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
 }
 
 header form {
@@ -84,7 +88,7 @@ header form {
 header form input[type="search"] {
     margin-top: 5px;
     outline: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
     width: 30vw;
     border-radius: 1em;
     border: none;
@@ -110,17 +114,60 @@ header form input[type="submit"] {
     transition-property: background-color;
     transition-duration: 0.5s;
     border-radius: 3em;
+    margin-top: 15px;
 }
 
 header form input[type="submit"]:hover {
-    background: lightblue;
-    border-radius: 1em;
+    background: var(--Submit-Button-Hover-Effect);
+    border-radius: 3em;
 }
 
 header form svg {
-    width: 25rem;
-    height: 35px;
+    width: 32px;
+    height: 32px;
 }
+
+
+/* Footer CSS Layout */
+
+footer {
+    background-color: var(--Footer-Background-Color);
+    color: var(--White-Text-Color);
+    width: calc(100% - 3px);
+    height: auto;
+    display: flex;
+    padding: 2px;
+    margin: 0px;
+}
+
+footer * {
+    padding: 1px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    background-color: var(--Footer-Background-Color);
+}
+
+footer a {
+    color: var(--Special-Text-Color);
+}
+
+footer a:hover {
+    color: var(--White-Text-Color);
+}
+
+.Creators {
+    float: right;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+body {
+    background-color: var(--Body-Background-Color);
+    margin: 0px;
+}
+
+
+/* ^^^ Basic Website CSS Code Above ^^^ */
 
 
 /* Main CSS */
