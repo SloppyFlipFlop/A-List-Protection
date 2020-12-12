@@ -2,8 +2,7 @@
     --Footer-Background-Color: #1D4D9A;
     --Header-Background-color: #1D4D9A;
     --Special-Text-Color: #88B7D3;
-    --Box-Shadow: #056B9E;
-    --Website-Description-and-Contact-Background-Color: #437DDB;
+    --White-Background-Color: #F2EDEB;
 }
 
 
@@ -54,7 +53,7 @@ header img:hover {
 
 nav {
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: 9px;
 }
 
 nav ul {
@@ -132,6 +131,7 @@ main {
     height: 100%;
 }
 
+
 /* Footer CSS Layout */
 
 footer {
@@ -170,7 +170,6 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%234f8ef1' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%2373a0e8' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%2393b1e2' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23afc2df' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23c8d1e0' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23dde0e5' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23eeeeee' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: cover;
-
     margin: 0px;
     background-size: cover;
     margin: 0px;
@@ -183,3 +182,123 @@ body {
 ::-webkit-scrollbar-track {
     background: navy;
 }
+
+
+/* Main Body CSS Code */
+
+
+/* Top Image Layout */
+
+.Top-image {
+    font-family: 'JetBrains Mono', monospace;
+    width: calc(100vw - 60px);
+    /* margin-left: auto;
+    margin-right: auto; */
+    background-color: var(--White-Background-Color);
+    /* background: url(images/Security_Picture.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    letter-spacing: 0px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.Top-image h1 {
+    font-size: 5em;
+    display: inline-block;
+}
+
+@keyframes c {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        -ms-transform: translate(35vw, 0px);
+        /* IE 9 */
+        -webkit-transform: translate(35vw, 0px);
+        /* Safari */
+        transform: translate(35vw, 0px);
+        /* Standard syntax */
+    }
+    from {
+        color: #6FAAED;
+    }
+    to {
+        color: #4C75A3;
+    }
+    opacity: 1;
+}
+
+.c,
+.a,
+.r,
+.e,
+.e,
+.r,
+.s {
+    animation: c 4s ease forwards;
+    animation-iteration-count: 1;
+}
+
+.c {
+    animation-delay: 0.4s;
+    transform: rotate3d(10, 10, 10, 65deg);
+}
+
+.a {
+    animation-delay: 0.3s;
+}
+
+.r {
+    animation-delay: 0.2s;
+}
+
+.e {
+    animation-delay: 0.1s;
+}
+
+.e {
+    animation-delay: 0s;
+    -webkit-transform: rotateZ(20deg);
+    /* Safari */
+    transform: rotateZ(20deg);
+}
+
+.r {
+    animation-delay: -0.1s;
+    -webkit-transform: rotateZ(20deg);
+    /* Safari */
+    transform: rotateZ(20deg);
+}
+
+.s {
+    animation-delay: -0.2s;
+    -webkit-transform: rotateZ(20deg);
+    /* Safari */
+    transform: rotateZ(20deg);
+}
+
+
+/* ^^^ Top Image Layout ^^^ */
+
+
+/* Job Offers Area Layout */
+
+.job-offers {
+    background-color: var(--White-Background-Color);
+    border: 1px solid black;
+    border-radius: 1rem;
+    width: calc(100vw - 60px);
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100px;
+}
+
+
+/* ^^^ Job Offers Area Layout ^^^ */
+
+
+/* ^^^ Main Body CSS Code ^^^ */

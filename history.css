@@ -3,6 +3,7 @@
     --Header-Background-color: #2E4661;
     --Special-Text-Color: #88B7D3;
     --Background-Image-Height: 200px;
+    --White-Background-Color: #F2EDEB;
 }
 
 
@@ -57,14 +58,19 @@ header img:hover {
 nav {
     margin-left: auto;
     margin-right: 10px;
+    padding-top: 10px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.1rem;
-    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
 }
 
@@ -105,6 +111,7 @@ header form input[type="submit"] {
     transition-property: background-color;
     transition-duration: 0.5s;
     border-radius: 3em;
+    margin-top: 15px;
 }
 
 header form input[type="submit"]:hover {
@@ -174,9 +181,10 @@ body {
     width: calc(100vw - 40px);
     /* margin-left: auto;
     margin-right: auto; */
-    background: url(images/Security_Picture.png);
+    background-color: var(--White-Background-Color);
+    /* background: url(images/Security_Picture.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     letter-spacing: 5px;
     margin-top: 20px;
     margin-right: 20px;
@@ -185,7 +193,7 @@ body {
     border-radius: 1rem;
 }
 
-h1 {
+.Top-image h1 {
     font-size: 5em;
     display: inline-block;
 }
@@ -203,12 +211,11 @@ h1 {
         /* Standard syntax */
     }
     from {
-        color: #6FAAED;
+        color: var(--White-Background-Color);
     }
     to {
         color: #4C75A3;
     }
-    opacity: 1;
 }
 
 .i,
@@ -277,10 +284,10 @@ h1 {
 
 .About-Us-Summary-Area h1 {
     text-align: left;
-    margin-left: 12%;
+    margin-left: 18%;
     color: var(--Special-Text-Color);
     font-family: 'Do Hyeon', sans-serif;
-    font-weight: 40px;
+    font-size: 40px;
 }
 
 .Summary-Area {
