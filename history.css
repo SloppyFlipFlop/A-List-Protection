@@ -3,6 +3,7 @@
     --Header-Background-color: #2E4661;
     --Special-Text-Color: #88B7D3;
     --Background-Image-Height: 200px;
+    --White-Background-Color: #F2EDEB;
 }
 
 
@@ -57,6 +58,7 @@ header img:hover {
 nav {
     margin-left: auto;
     margin-right: 10px;
+    padding-top: 10px;
 }
 
 nav ul {
@@ -109,6 +111,7 @@ header form input[type="submit"] {
     transition-property: background-color;
     transition-duration: 0.5s;
     border-radius: 3em;
+    margin-top: 15px;
 }
 
 header form input[type="submit"]:hover {
@@ -178,7 +181,7 @@ body {
     width: calc(100vw - 40px);
     /* margin-left: auto;
     margin-right: auto; */
-    background-color: #F2EDEB;
+    background-color: var(--White-Background-Color);
     /* background: url(images/Security_Picture.png);
     background-repeat: no-repeat;
     background-size: cover; */
@@ -208,7 +211,7 @@ body {
         /* Standard syntax */
     }
     from {
-        color: #6FAAED;
+        color: var(--White-Background-Color);
     }
     to {
         color: #4C75A3;
