@@ -170,87 +170,24 @@ body {
 /* ^^^ Basic Website CSS Code Above ^^^ */
 
 
-/* Main CSS */
-
-main {
-    background-color: white;
-    padding: 5px;
-    height: 100%;
-}
-
-
-/* Footer CSS Layout */
-
-footer {
-    background-color: var(--Footer-Background-Color);
-    color: white;
-    width: calc(100% - 3px);
-    height: auto;
-    display: flex;
-    padding: 2px;
-    margin: 0px;
-}
-
-footer * {
-    padding: 1px;
-    margin: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--Footer-Background-Color);
-}
-
-footer a {
-    color: var(--Special-Text-Color);
-}
-
-footer a:hover {
-    color: white;
-}
-
-.Creators {
-    float: right;
-    margin-left: auto;
-    margin-right: 5px;
-}
-
-body {
-    background-color: #287bff;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%234f8ef1' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%2373a0e8' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%2393b1e2' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23afc2df' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23c8d1e0' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23dde0e5' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23eeeeee' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 0px;
-    background-size: cover;
-    margin: 0px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: navy;
-}
-
-::-webkit-scrollbar-track {
-    background: navy;
-}
-
-
-/* Main Body CSS Code */
-
-
 /* Top Image Layout */
 
 .Top-image {
     font-family: 'JetBrains Mono', monospace;
     width: calc(100vw - 60px);
-    /* margin-left: auto;
-    margin-right: auto; */
-    background-color: var(--White-Background-Color);
+    background: var(--White-Background-Color);
+    color: var(--White-Background-Color);
     /* background: url(images/Security_Picture.png);
     background-repeat: no-repeat;
     background-size: cover; */
-    letter-spacing: 0px;
+    letter-spacing: .0px;
     margin-top: 20px;
     margin-right: 20px;
     margin-left: 20px;
     border: 1px solid black;
     border-radius: 1rem;
+
+    padding-left: 10px;
 }
 
 .Top-image h1 {
@@ -271,50 +208,61 @@ body {
         /* Standard syntax */
     }
     from {
-        color: #6FAAED;
+        color: var(--White-Background-Color);
     }
     to {
         color: #4C75A3;
     }
-    opacity: 1;
 }
 
 .c,
 .a,
 .r,
 .e,
-.e,
-.r,
+.e-2,
+.r-2,
 .s {
-    animation: c 4s ease forwards;
+    animation: c 2.5s ease-in-out forwards;
     animation-iteration-count: 1;
 }
 
 .c {
     animation-delay: 0.4s;
-    transform: rotate3d(10, 10, 10, 65deg);
+    /* transform: rotate3d(10, 10, 10, 65deg); */
+    -webkit-transform: rotateZ(20deg);
+    /* Safari */
+    transform: rotateZ(20deg);
 }
 
 .a {
     animation-delay: 0.3s;
-}
-
-.r {
-    animation-delay: 0.2s;
-}
-
-.e {
-    animation-delay: 0.1s;
-}
-
-.e {
-    animation-delay: 0s;
     -webkit-transform: rotateZ(20deg);
     /* Safari */
     transform: rotateZ(20deg);
 }
 
 .r {
+    animation-delay: 0.2s;
+    -webkit-transform: rotateZ(20deg);
+    /* Safari */
+    transform: rotateZ(20deg);
+}
+
+.e {
+    animation-delay: 0.1s;
+    -webkit-transform: rotateZ(20deg);
+    /* Safari */
+    transform: rotateZ(20deg);
+}
+
+.e-2 {
+    animation-delay: 0s;
+    -webkit-transform: rotateZ(20deg);
+    /* Safari */
+    transform: rotateZ(20deg);
+}
+
+.r-2 {
     animation-delay: -0.1s;
     -webkit-transform: rotateZ(20deg);
     /* Safari */

@@ -177,7 +177,7 @@ body {
 
 .Top-image {
     font-family: 'JetBrains Mono', monospace;
-    width: calc(100vw - 50px);
+    width: calc(100vw - 60px);
     background: var(--White-Background-Color);
     color: var(--White-Background-Color);
     /* background: url(images/Security_Picture.png);

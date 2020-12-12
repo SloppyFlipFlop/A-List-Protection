@@ -226,7 +226,7 @@ body {
 .c,
 .e-2,
 .s-2 {
-    animation: S 3s ease-in-out forwards;
+    animation: S 2.5s ease-in-out forwards;
     animation-iteration-count: 1;
 }
 
