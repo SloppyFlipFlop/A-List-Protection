@@ -173,8 +173,11 @@ body {
     width: calc(100vw - 60px);
     margin-right: 20px;
     margin-left: 20px;
-    height: fit-content;
+    height: 80px;
     text-align: center;
+    background-color: var(--White-Background-Color);
+    border: 1px solid black;
+    border-radius: 1rem;
 }
 
 .header-message {
@@ -184,7 +187,8 @@ body {
 
 .typed-cursor {
     opacity: 1;
-    font-size: 300%;
+    /* Changes the cursors size */
+    font-size: 400%;
     -webkit-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }

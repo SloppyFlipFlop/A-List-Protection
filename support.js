@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded',
     function () {
         Typed.new('.header-message', {
-            strings: ["  ", "Need Protection?"],
+            strings: ["  ", "Need Help?", "Were here to help!"],
             //         The higher the number the slower the text will type.
-            typeSpeed: 90
+            typeSpeed: 80
         });
     });
 
