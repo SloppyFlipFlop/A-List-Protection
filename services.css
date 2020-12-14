@@ -9,7 +9,6 @@
     --Submit-Button-Hover-Effect: lightblue;
 }
 
-
 /* Basic Website CSS Code */
 
 * {
@@ -18,8 +17,7 @@
     margin: 0;
 }
 
-html,
-body {
+html, body {
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
@@ -127,7 +125,6 @@ header form svg {
     height: 32px;
 }
 
-
 /* Footer CSS Layout */
 
 footer {
@@ -166,9 +163,7 @@ body {
     margin: 0px;
 }
 
-
 /* ^^^ Basic Website CSS Code Above ^^^ */
-
 
 /* Top Image Layout */
 
@@ -186,14 +181,12 @@ body {
     margin-left: 20px;
     border: 1px solid black;
     border-radius: 1rem;
-
     padding-left: 10px;
 }
 
 .Top-image h1 {
     font-size: 5em;
     display: inline-block;
-
 }
 
 @keyframes S {
@@ -213,19 +206,12 @@ body {
     }
     to {
         color: #4C75A3;
+        text-shadow: 0px 2px 5px black;
     }
     /* opacity: 1; */
 }
 
-
-.S,
-.e,
-.r,
-.v,
-.i,
-.c,
-.e-2,
-.s-2 {
+.S, .e, .r, .v, .i, .c, .e-2, .s-2 {
     animation: S 2.5s ease-in-out forwards;
     animation-iteration-count: 1;
 }
@@ -233,7 +219,6 @@ body {
 .S {
     animation-delay: 0.4s;
     /* transform: rotate3d(10, 10, 10, 65deg); */
-
     -webkit-transform: rotateZ(20deg);
     /* Safari */
     transform: rotateZ(20deg);
@@ -241,7 +226,6 @@ body {
 
 .e {
     animation-delay: 0.3s;
-
     -webkit-transform: rotateZ(20deg);
     /* Safari */
     transform: rotateZ(20deg);
@@ -249,7 +233,6 @@ body {
 
 .r {
     animation-delay: 0.2s;
-
     -webkit-transform: rotateZ(20deg);
     /* Safari */
     transform: rotateZ(20deg);
@@ -257,7 +240,6 @@ body {
 
 .v {
     animation-delay: 0.1s;
-
     -webkit-transform: rotateZ(20deg);
     /* Safari */
     transform: rotateZ(20deg);
@@ -295,23 +277,23 @@ body {
 
 /* Packages CSS */
 
-    .packages{
-        border: 1px soild black;
-        border-radius: 1rem;
-        background-color: var(--White-Background-Color);
-        display: flex;
-        margin: 10px 20px 10px 20px;
-        padding: 10px;
-    }
+.packages {
+    border: 1px soild black;
+    border-radius: 1rem;
+    background-color: var(--White-Background-Color);
+    display: flex;
+    margin: 10px 20px 10px 20px;
+    padding: 10px;
+}
 
-    .diamond, .gold, .silver{
-        border: 1px soild black;
-        border-radius: 1rem;
-        margin: 20px;
-        padding: 10px;
-        width: 25%;
-    }
+.diamond, .gold, .silver {
+    border: 1px soild black;
+    border-radius: 1rem;
+    margin: 20px;
+    padding: 10px;
+    width: 25%;
+}
 
-    .diamond ul, .gold ul, .silver ul{
-        list-style-type: none;
-    }
+.diamond ul, .gold ul, .silver ul {
+    list-style-type: none;
+}
