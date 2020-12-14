@@ -9,7 +9,6 @@
     --Submit-Button-Hover-Effect: lightblue;
 }
 
-
 /* Basic Website CSS Code */
 
 * {
@@ -18,8 +17,7 @@
     margin: 0;
 }
 
-html,
-body {
+html, body {
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
@@ -127,7 +125,6 @@ header form svg {
     height: 32px;
 }
 
-
 /* Footer CSS Layout */
 
 footer {
@@ -166,12 +163,9 @@ body {
     margin: 0px;
 }
 
-
 /* ^^^ Basic Website CSS Code Above ^^^ */
 
-
 /* Main Body CSS Code */
-
 
 /* Top Image Layout */
 
@@ -189,7 +183,6 @@ body {
     margin-left: 20px;
     border: 1px solid black;
     border-radius: 1rem;
-
     padding-left: 10px;
 }
 
@@ -215,16 +208,11 @@ body {
     }
     to {
         color: #4C75A3;
+        text-shadow: 0px 2px 5px black;
     }
 }
 
-.h,
-.i,
-.s,
-.t,
-.o,
-.r,
-.y {
+.h, .i, .s, .t, .o, .r, .y {
     animation: h 2.5s ease-in-out forwards;
     animation-iteration-count: 1;
 }
@@ -232,7 +220,6 @@ body {
 .h {
     animation-delay: 0.4s;
     /* transform: rotate3d(10, 10, 10, 65deg); */
-
     -webkit-transform: rotateZ(20deg);
     /* Safari */
     transform: rotateZ(20deg);
@@ -280,9 +267,7 @@ body {
     transform: rotateZ(20deg);
 }
 
-
 /* ^^^ Top Image Layout ^^^ */
-
 
 /* About Us layout */
 
@@ -311,6 +296,7 @@ body {
 
 .Summary-Area .About-Us-Summary {
     width: 50%;
+    text-indent: 45px;
 }
 
 .Summary-Area img {
@@ -328,8 +314,6 @@ body {
     transition: .3s ease-in;
 }
 
-
 /* ^^^ About Us layout ^^^ */
-
 
 /* ^^^ MainBody CSS Code ^^^ */
