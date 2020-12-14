@@ -9,7 +9,6 @@
     --Submit-Button-Hover-Effect: lightblue;
 }
 
-
 /* Basic Website CSS Code */
 
 * {
@@ -18,8 +17,7 @@
     margin: 0;
 }
 
-html,
-body {
+html, body {
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
@@ -127,7 +125,6 @@ header form svg {
     height: 32px;
 }
 
-
 /* Footer CSS Layout */
 
 footer {
@@ -166,9 +163,7 @@ body {
     margin: 0px;
 }
 
-
 /* ^^^ Basic Website CSS Code Above ^^^ */
-
 
 /* Top Image Layout */
 
@@ -186,7 +181,6 @@ body {
     margin-left: 20px;
     border: 1px solid black;
     border-radius: 1rem;
-
     padding-left: 10px;
 }
 
@@ -215,13 +209,7 @@ body {
     }
 }
 
-.c,
-.a,
-.r,
-.e,
-.e-2,
-.r-2,
-.s {
+.c, .a, .r, .e, .e-2, .r-2, .s {
     animation: c 2.5s ease-in-out forwards;
     animation-iteration-count: 1;
 }
@@ -276,24 +264,94 @@ body {
     transform: rotateZ(20deg);
 }
 
-
 /* ^^^ Top Image Layout ^^^ */
-
 
 /* Job Offers Area Layout */
 
-.job-offers {
+.job-area {
+    margin-top: 20px;
     background-color: var(--White-Background-Color);
     border: 1px solid black;
     border-radius: 1rem;
-    width: calc(100vw - 60px);
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    justify-items: center;
 }
 
+.job-area h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Animated "Now Hiring text" Layout */
+
+.animated {
+    position: relative;
+    background-color: white;
+    line-height: 3rem;
+    width: 200px;
+    overflow: hidden;
+    height: 3rem;
+    text-align: center;
+}
+
+.animated__text {
+    position: absolute;
+    animation: 3s bounce ease-in-out infinite paused;
+    white-space: nowrap;
+    top: 0;
+    padding: 0 0.5rem;
+}
+
+.animated:not(.animated--on-hover) .animated__text, .animated.animated--on-hover:hover .animated__text {
+    animation-play-state: running;
+}
+
+@keyframes bounce {
+    0%, 5%, 95%, 100% {
+        left: 0%;
+        transform: translate(0, 0);
+    }
+    45%, 55% {
+        left: 100%;
+        transform: translate(-100%, 0);
+    }
+}
+
+/* ^^^ Animated "Now Hiring text" Layout ^^^ */
+
+.job-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.job-offer {
+    background-color: var(--White-Background-Color);
+    width: calc(33.33% - 60px);
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    padding: 10px;
+}
+
+.job-offer h1 {
+    text-align: center;
+}
+
+.job-offer img {
+    /* Centers the image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    padding: 10px;
+}
 
 /* ^^^ Job Offers Area Layout ^^^ */
-
 
 /* ^^^ Main Body CSS Code ^^^ */
