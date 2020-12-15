@@ -293,25 +293,122 @@ body {
 
 /* ^^^ Top Image Layout ^^^ */
 
-/* Packages CSS */
+/* Services Area CSS */
 
-    .packages{
-        border: 1px soild black;
-        border-radius: 1rem;
-        background-color: var(--White-Background-Color);
-        display: flex;
+    .servicesArea{
         margin: 10px 20px 10px 20px;
         padding: 10px;
+        border: 1px solid black;
+        border-radius: 1rem;
+        font-size: 15px;
+        background-color: var(--White-Background-Color);
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
     }
 
-    .diamond, .gold, .silver{
-        border: 1px soild black;
+    .servicesArea ul{
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .servicesArea h4{
+        text-align: center;
+    }
+
+    .packagesTitle{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .diamond{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border: 2px solid #BFF1F8;
         border-radius: 1rem;
         margin: 20px;
         padding: 10px;
-        width: 25%;
+        width: 250px;
     }
 
-    .diamond ul, .gold ul, .silver ul{
-        list-style-type: none;
+    .gold{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        border: 2px solid #FFF7A8;
+        border-radius: 1rem;
+        margin: 20px;
+        padding: 10px;
+        width: 250px;
     }
+
+    .silver{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        border: 2px solid #DBDBDB;
+        border-radius: 1rem;
+        margin: 20px;
+        padding: 10px;
+        width: 250px;
+    }
+
+    .otherServices{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 20px;
+        padding: 10px;
+        width: 250px;
+    }
+
+    .otherServices h3{
+        text-align: center;
+    }
+
+    .servicesImage{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        max-width: 90%;
+    }
+
+    .contactUsArea{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        margin: 20px;
+        padding: 10px;
+        width: 250px;
+        text-align: center;
+    }
+
+/* ^^^ Packages CSS ^^^ */
+
+/* Other Services Section */
+
+/* .otherServicesArea{
+    display: flex;
+}
+
+.otherServicesText{
+    margin: 10px 10px 10px 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: var(--White-Background-Color);
+}
+
+.otherServicesText ul{
+    list-style-type: none;
+}
+
+.servicesImage{
+    width: auto;
+    height: auto; 
+    margin: 10px 20px 10px 10px;
+    justify-self: end;
+} */
+
+/* ^^^ Other Services Section CSS ^^^ */
