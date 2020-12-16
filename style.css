@@ -295,7 +295,7 @@ body {
     text-decoration: none;
     outline: none;
     border: none;
-    pointer-events: all;
+    pointer-events: auto;
     text-shadow: 0px 2px 5px black;
     letter-spacing: 5;
 }
@@ -314,7 +314,7 @@ body {
     pointer-events: none;
     text-align: center;
     height: fit-content;
-    margin: 5px;
+    margin: 10px;
     letter-spacing: 1;
     word-spacing: 2;
 }

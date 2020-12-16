@@ -166,7 +166,8 @@ body {
 /* ^^^ Basic Website CSS Code Above ^^^ */
 
 /* Top Image Layout */
-.TopArea{
+
+.TopArea {
     font-family: 'JetBrains Mono', monospace;
     background: var(--White-Background-Color);
     color: var(--White-Background-Color);
@@ -287,92 +288,92 @@ body {
     padding: 10px;
 }
 
-    .packagesTitle{
-        font-size: 1.4rem;
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
+.packagesTitle {
+    font-size: 1.4rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
 
-    .servicesArea ul{
-        list-style-type: none;
-        text-align: center;
-    }
+.servicesArea ul {
+    list-style-type: none;
+    text-align: center;
+}
 
-    .servicesArea h4{
-        text-align: center;
-    }
+.servicesArea h4 {
+    text-align: center;
+}
 
-    .diamond{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        border: 2px solid #BFF1F8;
-        border-radius: 1rem;
-        margin: 20px;
-        padding: 10px;
-        max-width: 250px;
-        height: auto;
-    }
+.diamond {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border: 2px solid #BFF1F8;
+    border-radius: 1rem;
+    margin: 20px;
+    padding: 10px;
+    max-width: 250px;
+    height: auto;
+}
 
-    .gold{
-        grid-column: 2/3;
-        grid-row: 2/3;
-        border: 2px solid #FFF7A8;
-        border-radius: 1rem;
-        margin: 20px;
-        padding: 10px;
-        max-width: 250px;
-        height: auto;
-    }
+.gold {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 2px solid #FFF7A8;
+    border-radius: 1rem;
+    margin: 20px;
+    padding: 10px;
+    max-width: 250px;
+    height: auto;
+}
 
-    .silver{
-        grid-column: 3/4;
-        grid-row: 2/3;
-        border: 2px solid #DBDBDB;
-        border-radius: 1rem;
-        margin: 20px;
-        padding: 10px;
-        max-width: 250px;
-        height: auto;
-    }
+.silver {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    border: 2px solid #DBDBDB;
+    border-radius: 1rem;
+    margin: 20px;
+    padding: 10px;
+    max-width: 250px;
+    height: auto;
+}
 
-    .otherServices{
-        grid-column: 1/2;
-        grid-row: 3/4;
-        margin: 20px;
-        padding: 10px;
-        max-width: 250px;
-        height: auto;
-    }
+.otherServices {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin: 20px;
+    padding: 10px;
+    max-width: 250px;
+    height: auto;
+}
 
-    .otherServices h3{
-        text-align: center;
-    }
+.otherServices h3 {
+    text-align: center;
+}
 
-    .servicesImage{
-        grid-column: 2/3;
-        grid-row: 3/4;
-        max-width: 90%;
-        height: auto;
-        margin: 20px;
-        padding: 10px;
-    }
+.servicesImage {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    max-width: 90%;
+    height: auto;
+    margin: 20px;
+    padding: 10px;
+}
 
-    .contactUsArea{
-        grid-column: 3/4;
-        grid-row: 3/4;
-        margin: 20px;
-        padding: 10px;
-        max-width: 250px;
-        height: auto;
-        text-align: center;
-    }
+.contactUsArea {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    margin: 20px;
+    padding: 10px;
+    max-width: 250px;
+    height: auto;
+    text-align: center;
+}
 
 /* ^^^ Services Area CSS ^^^ */
 
 /* Responsive Design */
 
-@media only screen and (max-width: 700px){
-    .servicesArea{
+@media only screen and (min-width: 700px) {
+    .servicesArea {
         margin: 10px 20px 10px 20px;
         padding: 10px;
         border: 1px solid black;
@@ -382,34 +383,28 @@ body {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-
         justify-content: start;
         justify-items: start;
         align-items: start;
     }
-
-    .packagesTitle{
+    .packagesTitle {
         align-self: center;
         text-decoration: underline 1px black;
     }
-
-    .servicesArea ul{
+    .servicesArea ul {
         text-align: left;
     }
-
-    .servicesArea h4{
+    .servicesArea h4 {
         text-align: left;
     }
-
-    .servicesImage{
+    .servicesImage {
         order: 1;
         max-width: 100%;
         height: auto;
         align-self: center;
         margin: 0;
     }
-
-    .diamond{
+    .diamond {
         max-width: 100%;
         margin: 0;
         padding-left: 25px;
@@ -417,8 +412,7 @@ body {
         order: 2;
         border: none;
     }
-
-    .gold{
+    .gold {
         max-width: 100%;
         margin: 0;
         padding-left: 25px;
@@ -426,8 +420,7 @@ body {
         order: 3;
         border: none;
     }
-
-    .silver{
+    .silver {
         max-width: 100%;
         margin: 0;
         padding-left: 25px;
@@ -438,21 +431,19 @@ body {
     /* .silver h4{
         color: #DBDBDB;
     } */
-
-    .otherServices{
+    .otherServices {
         max-width: 100%;
         margin: 0;
         padding-left: 25px;
         padding-right: 25px;
         order: 5;
     }
-    .otherServices h3{
+    .otherServices h3 {
         align-self: left;
         text-align: left;
         font-size: 1.4rem;
     }
-
-    .contactUsArea{
+    .contactUsArea {
         max-width: 100%;
         margin: 0;
         padding-left: 25px;
@@ -461,16 +452,16 @@ body {
     }
 }
 
-@media only screen and (max-width: 861px){
-    header form{
+@media only screen and (max-width: 861px) {
+    header form {
         display: none;
     }
-
-    nav{
+    nav {
         margin-left: 10;
     }
     /* nav ul{
         justify-content: space-evenly;
     } */
 }
+
 /* ^^^ Responsive Design ^^^ */
