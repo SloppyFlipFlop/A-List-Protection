@@ -46,6 +46,10 @@ header * {
     margin: 3px;
 }
 
+.menu {
+    display: none;
+}
+
 header img {
     margin-left: 50px;
     height: 50px;
@@ -67,7 +71,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -86,7 +90,6 @@ header form {
     flex-basis: fit-content;
     max-width: 100%;
     max-height: 60px;
-    margin-left: 20px;
 }
 
 header form input[type="search"] {
@@ -185,12 +188,13 @@ body {
     margin: 10px 20px 10px 20px;
     border: 1px solid black;
     border-radius: 1rem;
-    text-align: center
+    text-align: center;
+    min-width: 637px;
 }
 
-.Top-image {
+/* @sc .Top-image {
     padding-right: 70px;
-}
+} */
 
 .Top-image h1 {
     font-size: 5em;
@@ -284,9 +288,9 @@ body {
 /* ^^^ Top Image Layout ^^^ */
 
 /* Packages CSS */
-.servicesArea{
+
+.servicesArea {
     margin: 10px 20px 10px 20px;
-    padding: 10px;
     border: 1px solid black;
     border-radius: 1rem;
     font-size: 15px;
@@ -296,6 +300,7 @@ body {
     justify-content: center;
     justify-items: center;
     align-items: center;
+    min-width: 637px;
 }
 
 .packagesTitle {
@@ -324,6 +329,12 @@ body {
     height: auto;
 }
 
+.diamond:hover {
+    background-color: #aedde4;
+    border: 2px solid #aedde4;
+    opacity: .8;
+}
+
 .gold {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -333,6 +344,12 @@ body {
     padding: 10px;
     max-width: 250px;
     height: auto;
+}
+
+.gold:hover {
+    background-color: #e9e198;
+    border: 2px solid #e9e198;
+    opacity: .8;
 }
 
 .silver {
@@ -346,6 +363,12 @@ body {
     height: auto;
 }
 
+.silver:hover {
+    background-color: #d1d0d0;
+    border: 2px solid #d1d0d0;
+    opacity: .8;
+}
+
 .otherServices {
     grid-column: 1/2;
     grid-row: 3/4;
@@ -353,6 +376,13 @@ body {
     padding: 10px;
     max-width: 250px;
     height: auto;
+}
+
+.otherServices:hover {
+    background-color: #c4c3c3;
+    border: 2px solid #c4c3c3;
+    border-radius: 1rem;
+    opacity: .6;
 }
 
 .otherServices h3 {
@@ -366,6 +396,7 @@ body {
     height: auto;
     margin: 20px;
     padding: 10px;
+    border-radius: 1rem;
 }
 
 .contactUsArea {
@@ -378,10 +409,11 @@ body {
     text-align: center;
 }
 
-    button{
-        color: maroon;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
+button {
+    color: maroon;
+    pointer-events: visible;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
 /* ^^^ Services Area CSS ^^^ */
 
@@ -390,17 +422,17 @@ body {
 @media only screen and (max-width: 700px) {
     .servicesArea {
         margin: 10px 20px 10px 20px;
-        padding: 10px;
+        /* padding: 10px; */
         border: 1px solid black;
         border-radius: 1rem;
         font-size: 15px;
         background-color: var(--White-Background-Color);
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-flow: column wrap;
         justify-content: start;
         justify-items: start;
-        align-items: start;
+        align-items: center;
+        width: calc(100vh - 90%);
     }
     .packagesTitle {
         align-self: center;
@@ -412,10 +444,13 @@ body {
         padding-right: 25px; */
     }
     .servicesArea ul {
-        text-align: left;
+        text-align: center;
+    }
+    .servicesArea p {
+        text-align: center;
     }
     .servicesArea h4 {
-        text-align: left;
+        text-align: center;
     }
     .servicesImage {
         order: 1;
@@ -423,6 +458,10 @@ body {
         height: auto;
         align-self: center;
         margin: 0;
+    }
+    .diamond:hover, .gold:hover, .silver:hover, .otherServices:hover {
+        background-color: #e7e2e0;
+        border-radius: 1rem;
     }
     .diamond {
         max-width: 100%;
@@ -470,9 +509,137 @@ body {
         align-self: center;
         font-size: 1.2rem;
     }
-
-    button{
+    button {
         font-size: 1.3rem;
+    }
+    /* Header Layout */
+    header {
+        background-color: var(--Header-Background-color);
+        color: var(--White-Text-Color);
+        width: calc(100vw - 3px);
+        height: fit-content;
+        min-height: 3em;
+        min-width: 637px;
+        position: sticky;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 2px;
+        margin: 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        z-index: 50;
+    }
+    header * {
+        padding: 1px;
+        margin: 3px;
+    }
+    header img {
+        margin-left: 50px;
+        height: 50px;
+        opacity: 1;
+        transition: all .2 ease-out;
+    }
+    header img:hover {
+        opacity: 0.65;
+        transition: .3s ease-in;
+    }
+    nav {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        background-color: var(--Header-Background-color);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%23F2EDEB'%3E%3Cpath d='M19 14H5c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2s-.9 2-2 2zM19 7H5c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2s-.9 2-2 2zM19 21H5c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2s-.9 2-2 2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+        background-size: 48px 48px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding-left: 0px;
+        width: 50px;
+        height: 100%;
+        padding-right: 0;
+    }
+    .menu:hover, .menu:focus {
+        opacity: 1;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--White-Background-Color);
+        min-width: 112px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px #000;
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: var(--Header-Background-color);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .menu-dropdown-list a:hover {
+        background-color: var(--White-Background-Color);
+        position: relative;
+        right: 1.5px;
+        top: 1.5px;
+    }
+    .show {
+        display: block;
+        border-radius: 1rem;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        top: 45px;
+        right: 45px;
+    }
+    header form {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin: 0;
+        flex-basis: fit-content;
+        max-width: 100%;
+        max-height: 60px;
+    }
+    header form input[type="search"] {
+        margin-top: 5px;
+        outline: none;
+        font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+        width: 30vw;
+        border-radius: 1em;
+        border: none;
+        padding: 2px;
+        padding-left: 6px;
+        flex-shrink: 3;
+        flex-grow: 4;
+        transition-property: border-radius;
+        transition-duration: 0.5s;
+    }
+    header form input[type="search"]:focus {
+        border-radius: 0em;
+    }
+    header form input[type="submit"] {
+        background: none;
+        outline: none;
+        border: none;
+        width: 32px;
+        height: 32px;
+        margin-top: 8px;
+        transition-property: background-color;
+        transition-duration: 0.5s;
+        border-radius: 3em;
+        margin-top: 15px;
+    }
+    header form input[type="submit"]:hover {
+        background: var(--Submit-Button-Hover-Effect);
+        border-radius: 3em;
+    }
+    header form svg {
+        width: 32px;
+        height: 32px;
     }
 }
 
