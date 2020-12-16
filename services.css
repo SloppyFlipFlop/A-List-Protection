@@ -169,12 +169,9 @@ body {
 
 .Top-image {
     font-family: 'JetBrains Mono', monospace;
-    width: calc(100vw - 50px);
+    width: calc(100vw - 60px);
     background: var(--White-Background-Color);
     color: var(--White-Background-Color);
-    /* background: url(images/Security_Picture.png);
-    background-repeat: no-repeat;
-    background-size: cover; */
     letter-spacing: 5px;
     margin-top: 20px;
     margin-right: 20px;
@@ -275,91 +272,25 @@ body {
 
 /* ^^^ Top Image Layout ^^^ */
 
-/* Services Area CSS */
+/* Packages CSS */
 
-    .servicesArea{
-        margin: 10px 20px 10px 20px;
-        padding: 10px;
-        border: 1px solid black;
-        border-radius: 1rem;
-        font-size: 15px;
-        background-color: var(--White-Background-Color);
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-    }
+.packages {
+    border: 1px soild black;
+    border-radius: 1rem;
+    background-color: var(--White-Background-Color);
+    display: flex;
+    margin: 10px 20px 10px 20px;
+    padding: 10px;
+}
 
-    .servicesArea ul{
-        list-style-type: none;
-        text-align: center;
-    }
+.diamond, .gold, .silver {
+    border: 1px soild black;
+    border-radius: 1rem;
+    margin: 20px;
+    padding: 10px;
+    width: 25%;
+}
 
-    .servicesArea h4{
-        text-align: center;
-    }
-
-    .packagesTitle{
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    .diamond{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        border: 2px solid #BFF1F8;
-        border-radius: 1rem;
-        margin: 20px;
-        padding: 10px;
-        width: 250px;
-    }
-
-    .gold{
-        grid-column: 2/3;
-        grid-row: 2/3;
-        border: 2px solid #FFF7A8;
-        border-radius: 1rem;
-        margin: 20px;
-        padding: 10px;
-        width: 250px;
-    }
-
-    .silver{
-        grid-column: 3/4;
-        grid-row: 2/3;
-        border: 2px solid #DBDBDB;
-        border-radius: 1rem;
-        margin: 20px;
-        padding: 10px;
-        width: 250px;
-    }
-
-    .otherServices{
-        grid-column: 1/2;
-        grid-row: 3/4;
-        margin: 20px;
-        padding: 10px;
-        width: 250px;
-    }
-
-    .otherServices h3{
-        text-align: center;
-    }
-
-    .servicesImage{
-        grid-column: 2/3;
-        grid-row: 3/4;
-        max-width: 90%;
-    }
-
-    .contactUsArea{
-        grid-column: 3/4;
-        grid-row: 3/4;
-        margin: 20px;
-        padding: 10px;
-        width: 250px;
-        text-align: center;
-    }
-
-/* ^^^ Services Area CSS ^^^ */
+.diamond ul, .gold ul, .silver ul {
+    list-style-type: none;
+}
