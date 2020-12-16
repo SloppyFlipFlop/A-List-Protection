@@ -292,6 +292,12 @@ body {
         align-items: center;
     }
 
+    .packagesTitle{
+        font-size: 1.4rem;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
     .servicesArea ul{
         list-style-type: none;
         text-align: center;
@@ -299,11 +305,6 @@ body {
 
     .servicesArea h4{
         text-align: center;
-    }
-
-    .packagesTitle{
-        grid-column: 2/3;
-        grid-row: 1/2;
     }
 
     .diamond{
@@ -357,6 +358,8 @@ body {
         grid-row: 3/4;
         max-width: 90%;
         height: auto;
+        margin: 20px;
+        padding: 10px;
     }
 
     .contactUsArea{
@@ -370,8 +373,10 @@ body {
     }
 
 /* ^^^ Services Area CSS ^^^ */
-/* 
-@media screen and (max-width: 650px){
+
+/* Responsive Design */
+
+@media only screen and (max-width: 700px){
     .servicesArea{
         margin: 10px 20px 10px 20px;
         padding: 10px;
@@ -379,6 +384,98 @@ body {
         border-radius: 1rem;
         font-size: 15px;
         background-color: var(--White-Background-Color);
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        justify-content: start;
+        justify-items: start;
+        align-items: start;
     }
-} */
+
+    .packagesTitle{
+        align-self: center;
+        text-decoration: underline 1px black;
+    }
+
+    .servicesArea ul{
+        text-align: left;
+    }
+
+    .servicesArea h4{
+        text-align: left;
+    }
+
+    .servicesImage{
+        order: 1;
+        max-width: 100%;
+        height: auto;
+        align-self: center;
+        margin: 0;
+    }
+
+    .diamond{
+        max-width: 100%;
+        margin: 0;
+        padding-left: 25px;
+        padding-right: 25px;
+        order: 2;
+        border: none;
+    }
+
+    .gold{
+        max-width: 100%;
+        margin: 0;
+        padding-left: 25px;
+        padding-right: 25px;
+        order: 3;
+        border: none;
+    }
+
+    .silver{
+        max-width: 100%;
+        margin: 0;
+        padding-left: 25px;
+        padding-right: 25px;
+        order: 4;
+        border: none;
+    }
+    .silver h4{
+        /* color: #DBDBDB; */
+    }
+
+    .otherServices{
+        max-width: 100%;
+        margin: 0;
+        padding-left: 25px;
+        padding-right: 25px;
+        order: 5;
+    }
+    .otherServices h3{
+        align-self: left;
+        text-align: left;
+        font-size: 1.4rem;
+    }
+
+    .contactUsArea{
+        max-width: 100%;
+        margin: 0;
+        padding-left: 25px;
+        padding-right: 25px;
+        order: 6;
+    }
+}
+
+@media only screen and (max-width: 861px){
+    header form{
+        display: none;
+    }
+
+    nav{
+        margin-left: 10;
+    }
+    nav ul{
+        /* justify-content: space-evenly; */
+    }
+}
+/* ^^^ Responsive Design ^^^ */
