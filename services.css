@@ -419,10 +419,11 @@ body {
     }
     .servicesImage {
         order: 1;
-        max-width: 100%;
+        max-width: 80%;
         height: auto;
         align-self: center;
         margin: 0;
+        margin-right: 10px;
     }
     .diamond {
         max-width: 100%;
