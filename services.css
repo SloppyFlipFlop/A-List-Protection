@@ -276,21 +276,16 @@ body {
 
 /* ^^^ Top Image Layout ^^^ */
 
-/* Services Area CSS */
+/* Packages CSS */
 
-    .servicesArea{
-        margin: 10px 20px 10px 20px;
-        padding: 10px;
-        border: 1px solid black;
-        border-radius: 1rem;
-        font-size: 15px;
-        background-color: var(--White-Background-Color);
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-    }
+.packages {
+    border: 1px soild black;
+    border-radius: 1rem;
+    background-color: var(--White-Background-Color);
+    display: flex;
+    margin: 10px 20px 10px 20px;
+    padding: 10px;
+}
 
     .packagesTitle{
         font-size: 1.4rem;
@@ -440,9 +435,9 @@ body {
         order: 4;
         border: none;
     }
-    .silver h4{
-        /* color: #DBDBDB; */
-    }
+    /* .silver h4{
+        color: #DBDBDB;
+    } */
 
     .otherServices{
         max-width: 100%;
@@ -474,8 +469,8 @@ body {
     nav{
         margin-left: 10;
     }
-    nav ul{
-        /* justify-content: space-evenly; */
-    }
+    /* nav ul{
+        justify-content: space-evenly;
+    } */
 }
 /* ^^^ Responsive Design ^^^ */
