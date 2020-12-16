@@ -169,19 +169,18 @@ body {
 
 .Top-image {
     font-family: 'JetBrains Mono', monospace;
-    width: calc(100vw - 60px);
     background: var(--White-Background-Color);
     color: var(--White-Background-Color);
+    width: calc(100% - 40px);
     /* background: url(images/Security_Picture.png);
     background-repeat: no-repeat;
     background-size: cover; */
-    letter-spacing: .0px;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
+    letter-spacing: 5px;
+    margin: 10px 20px 10px 20px;
     border: 1px solid black;
     border-radius: 1rem;
-    padding-left: 10px;
+    text-align: center;
+    min-width: 637px;
 }
 
 .Top-image h1 {
@@ -189,16 +188,20 @@ body {
     display: inline-block;
 }
 
+.Top-image ul {
+    margin-right: 80px;
+}
+
 @keyframes c {
     0% {
         opacity: 0;
     }
     100% {
-        -ms-transform: translate(35vw, 0px);
+        -ms-transform: translate(40px, 0px);
         /* IE 9 */
-        -webkit-transform: translate(35vw, 0px);
+        -webkit-transform: translate(40px, 0px);
         /* Safari */
-        transform: translate(35vw, 0px);
+        transform: translate(40px, 0px);
         /* Standard syntax */
     }
     from {
@@ -274,13 +277,14 @@ body {
     background-color: var(--White-Background-Color);
     border: 1px solid black;
     border-radius: 1rem;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 20px;
+    margin-right: 25px;
     padding: 20px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     justify-items: center;
+    align-content: center;
 }
 
 .job-area h1 {
@@ -292,7 +296,7 @@ body {
 
 .animated {
     position: relative;
-    background-color: white;
+    color: maroon;
     line-height: 3rem;
     width: 200px;
     overflow: hidden;
@@ -359,18 +363,21 @@ img[src="images/driverImage.jpg"]{
     width: 200px;
     max-width: 100%;
     height: auto;
+    margin-bottom: 10px;
 }
 
 img[src="images/careersBodyguard1.png"]{
     width: 150px;
     max-width: 100%;
     height: auto;
+    margin-bottom: 10px;
 }
 
 img[src="images/careersBodyguard2.png"]{
     width: 200px;
     max-width: 100%;
     height: auto;
+    margin-bottom: 10px;
 }
 /* ^^^ Job Offers Area Layout ^^^ */
 

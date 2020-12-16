@@ -171,19 +171,18 @@ body {
 
 .Top-image {
     font-family: 'JetBrains Mono', monospace;
-    width: calc(100vw - 60px);
     background: var(--White-Background-Color);
     color: var(--White-Background-Color);
+    width: calc(100% - 40px);
     /* background: url(images/Security_Picture.png);
     background-repeat: no-repeat;
     background-size: cover; */
     letter-spacing: 5px;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin: 10px 20px 10px 20px;
     border: 1px solid black;
     border-radius: 1rem;
-    padding-left: 10px;
+    text-align: center;
+    min-width: 637px;
 }
 
 .Top-image h1 {
@@ -191,16 +190,20 @@ body {
     display: inline-block;
 }
 
+.Top-image ul {
+    margin-right: 80px;
+}
+
 @keyframes h {
     0% {
         opacity: 0;
     }
     100% {
-        -ms-transform: translate(35vw, 0px);
+        -ms-transform: translate(40px, 0px);
         /* IE 9 */
-        -webkit-transform: translate(35vw, 0px);
+        -webkit-transform: translate(40px, 0px);
         /* Safari */
-        transform: translate(35vw, 0px);
+        transform: translate(40px, 0px);
         /* Standard syntax */
     }
     from {
