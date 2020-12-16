@@ -297,6 +297,7 @@ body {
     border: none;
     pointer-events: all;
     text-shadow: 0px 2px 5px black;
+    letter-spacing: 5;
 }
 
 .slideshow-text p {
@@ -310,7 +311,12 @@ body {
     outline: none;
     border: none;
     text-decoration: none;
-    pointer-events: auto;
+    pointer-events: none;
+    text-align: center;
+    height: fit-content;
+    margin: 5px;
+    letter-spacing: 1;
+    word-spacing: 2;
 }
 
 @media (max-width: 767px) {
