@@ -279,13 +279,18 @@ body {
 
 /* Packages CSS */
 
-.packages {
-    border: 1px soild black;
-    border-radius: 1rem;
-    background-color: var(--White-Background-Color);
-    display: flex;
+.servicesArea{
     margin: 10px 20px 10px 20px;
     padding: 10px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    font-size: 15px;
+    background-color: var(--White-Background-Color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
 }
 
 .packagesTitle {
