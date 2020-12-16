@@ -338,6 +338,9 @@ body {
     border: 1px solid black;
     border-radius: 1.5rem;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .job-offer h1 {
@@ -350,9 +353,25 @@ body {
     margin-left: auto;
     margin-right: auto;
     border-radius: 1rem;
-    padding: 10px;
 }
 
+img[src="images/driverImage.jpg"]{
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+}
+
+img[src="images/careersBodyguard1.png"]{
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+}
+
+img[src="images/careersBodyguard2.png"]{
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+}
 /* ^^^ Job Offers Area Layout ^^^ */
 
 /* ^^^ Main Body CSS Code ^^^ */

@@ -454,10 +454,11 @@ button {
     }
     .servicesImage {
         order: 1;
-        max-width: 100%;
+        max-width: 80%;
         height: auto;
         align-self: center;
         margin: 0;
+        margin-right: 10px;
     }
     .diamond:hover, .gold:hover, .silver:hover, .otherServices:hover {
         background-color: #e7e2e0;
