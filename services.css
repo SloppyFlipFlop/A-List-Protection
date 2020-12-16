@@ -166,19 +166,23 @@ body {
 /* ^^^ Basic Website CSS Code Above ^^^ */
 
 /* Top Image Layout */
-
-.Top-image {
+.TopArea{
     font-family: 'JetBrains Mono', monospace;
-    width: calc(100vw - 60px);
     background: var(--White-Background-Color);
     color: var(--White-Background-Color);
+    width: calc(100% - 40px);
+    /* background: url(images/Security_Picture.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
     letter-spacing: 5px;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin: 10px 20px 10px 20px;
     border: 1px solid black;
     border-radius: 1rem;
-    padding-left: 10px;
+    text-align: center
+}
+
+.Top-image {
+    padding-right: 70px;
 }
 
 .Top-image h1 {
@@ -191,11 +195,11 @@ body {
         opacity: 0;
     }
     100% {
-        -ms-transform: translate(30vw, 0px);
+        -ms-transform: translate(40px, 0px);
         /* IE 9 */
-        -webkit-transform: translate(30vw, 0px);
+        -webkit-transform: translate(40px, 0px);
         /* Safari */
-        transform: translate(30vw, 0px);
+        transform: translate(40px, 0px);
         /* Standard syntax */
     }
     from {
@@ -291,6 +295,88 @@ body {
     width: 25%;
 }
 
-.diamond ul, .gold ul, .silver ul {
-    list-style-type: none;
-}
+    .servicesArea h4{
+        text-align: center;
+    }
+
+    .packagesTitle{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .diamond{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border: 2px solid #BFF1F8;
+        border-radius: 1rem;
+        margin: 20px;
+        padding: 10px;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .gold{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        border: 2px solid #FFF7A8;
+        border-radius: 1rem;
+        margin: 20px;
+        padding: 10px;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .silver{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        border: 2px solid #DBDBDB;
+        border-radius: 1rem;
+        margin: 20px;
+        padding: 10px;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .otherServices{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 20px;
+        padding: 10px;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .otherServices h3{
+        text-align: center;
+    }
+
+    .servicesImage{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        max-width: 90%;
+        height: auto;
+    }
+
+    .contactUsArea{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        margin: 20px;
+        padding: 10px;
+        max-width: 250px;
+        height: auto;
+        text-align: center;
+    }
+
+/* ^^^ Services Area CSS ^^^ */
+/* 
+@media screen and (max-width: 650px){
+    .servicesArea{
+        margin: 10px 20px 10px 20px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 1rem;
+        font-size: 15px;
+        background-color: var(--White-Background-Color);
+        display: grid;
+    }
+} */
