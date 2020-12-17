@@ -361,29 +361,30 @@ body {
     border-radius: 1rem;
 }
 
-img[src="images/driverImage.jpg"]{
+img[src="images/driverImage.jpg"] {
     width: 200px;
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
 }
 
-img[src="images/careersBodyguard1.png"]{
+img[src="images/careersBodyguard1.png"] {
     width: 150px;
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
 }
 
-img[src="images/careersBodyguard2.png"]{
+img[src="images/careersBodyguard2.png"] {
     width: 200px;
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
 }
+
 /* ^^^ Job Offers Area Layout ^^^ */
 
-.jobRequirements{
+.jobRequirements {
     margin-top: 20px;
 }
 
@@ -391,4 +392,28 @@ img[src="images/careersBodyguard2.png"]{
     color: maroon;
     text-decoration: none;
 }
+
+.wiggle {
+    animation: wiggle 2s infinite;
+    text-align: center;
+}
+
+.wiggle a {
+    text-decoration: none;
+    color: var(--Body-Background-Color);
+    font-size: 32px;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
 /* ^^^ Main Body CSS Code ^^^ */
