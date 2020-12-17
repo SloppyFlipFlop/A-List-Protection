@@ -411,8 +411,13 @@ body {
 
 button {
     color: maroon;
-    pointer-events: visible;
+    pointer-events: auto;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+button:hover {
+    opacity: .8;
+    pointer-events: auto;
 }
 
 /* ^^^ Services Area CSS ^^^ */
