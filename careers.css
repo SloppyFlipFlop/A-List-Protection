@@ -139,6 +139,7 @@ footer {
     display: flex;
     padding: 2px;
     margin: 0px;
+    min-width: 660px;
 }
 
 footer * {
@@ -564,7 +565,7 @@ img[src="images/careersBodyguard2.png"] {
         margin: 0;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         z-index: 50;
-        min-width: 637px;
+        min-width: 660px;
     }
     header * {
         padding: 1px;

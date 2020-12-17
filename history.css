@@ -139,6 +139,7 @@ footer {
     display: flex;
     padding: 2px;
     margin: 0px;
+    min-width: 530px;
 }
 
 footer * {
@@ -347,7 +348,7 @@ body {
         margin: 0;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         z-index: 50;
-        min-width: calc(100vw - 40px);
+        min-width: 530px;
     }
     header * {
         padding: 1px;
