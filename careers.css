@@ -454,7 +454,7 @@ img[src="images/careersBodyguard2.png"] {
     }
 }
 
-@media only screen and (max-width: 815px) {
+@media only screen and (max-width: 870px) {
     .TopArea {
         font-family: 'JetBrains Mono', monospace;
         background: var(--White-Background-Color);
@@ -617,6 +617,7 @@ img[src="images/careersBodyguard2.png"] {
         position: relative;
         right: 1.5px;
         top: 1.5px;
+        color: maroon;
     }
     .show {
         display: block;
