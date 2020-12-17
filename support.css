@@ -172,12 +172,13 @@ body {
 .message-wrapper {
     width: calc(100vw - 60px);
     margin: 10px 20px 20px 20px;
+    padding-top: 15px;
     height: 90px;
     text-align: center;
     background-color: var(--White-Background-Color);
     border: 1px solid black;
     border-radius: 1rem;
-    min-width: 650px;
+    min-width: 700px;
 }
 
 .header-message {
@@ -227,7 +228,7 @@ body {
     border-radius: 1rem;
     font-size: 15px;
     background-color: var(--White-Background-Color);
-    min-width: 630px;
+    min-width: 680px;
 }
 
 /* ^^^ Main Layout ^^^ */
