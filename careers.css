@@ -422,13 +422,18 @@ img[src="images/careersBodyguard2.png"] {
     font-size: larger;
 }
 
-.job-info a {
-    text-decoration: none;
-    color: maroon;
+.hiring-info {
+    display: flex;
+    flex-flow: column nowrap;
+    line-height: center;
 }
 
-.job-info a:hover {
+.hiring-info .download-button {
     border: 1px solid black;
+    text-align: center;
+    text-decoration: none;
+    background-color: lightblue;
+    padding: 5px;
 }
 
 .wiggle {
@@ -681,34 +686,40 @@ img[src="images/careersBodyguard2.png"] {
         flex-flow: column nowrap;
         padding: 10px;
     }
-    .jobRequirements h3 {
-        text-align: center;
-        font-size: 32px;
+    .jobRequirements .requirement-area {
+        display: flex;
+        flex-flow: column nowrap;
     }
-    .jobRequirements p {
-        border: 2.5px solid var(--Body-Background-Color);
-        padding: 10px;
+    .jobRequirements .requirement {
+        height: fit-content;
+        border: 1.5px solid black;
         border-radius: 1rem;
-        list-style-type: circle;
-        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        width: calc(100% - 40px);
     }
-    .jobRequirements p:hover {
-        border: 2.5px solid maroon;
-        background-color: maroon;
-        color: white;
+    .hiring-info {
+        display: flex;
+        flex-flow: column nowrap;
     }
-    .jobRequirements p#job-info {
-        background-color: var(--White-Background-Color);
-        color: #000;
-        border: none;
+    .hiring-info .download-button {
+        margin: auto;
+        width: fit-content;
+        border-radius: .5rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
-    .jobRequirements p#job-info a {
+    .hiring-info .download-button a {
         text-decoration: none;
-        color: maroon;
+        /* Color of the button text */
+        color: black;
     }
-    .jobRequirements p#job-info a:hover {
-        opacity: .8;
-        pointer-events: auto;
+    .hiring-info .job-info {
+        text-align: center;
+        color: black;
+    }
+    .hiring-info .job-info a {
+        text-decoration: none;
     }
 }
 
