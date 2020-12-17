@@ -64,21 +64,23 @@
             <div class="job-box">
                 <div class="job-offer">
                     <h1>Driver</h1>
-                    <img src="images/driverImage.jpg" alt="">
+                    <img src="images/driverImage.jpg" alt="Profession driver">
                 </div>
 
                 <div class="job-offer">
                     <h1>Unarmed Bodyguard</h1>
-                    <img src="images/careersBodyguard1.png" alt="">
+                    <img src="images/careersBodyguard1.png" alt="Unarmed Bodyguard">
                 </div>
 
                 <div class="job-offer">
                     <h1>Armed Bodyguard</h1>
-                    <img src="images/careersBodyguard2.png" alt="">
+                    <img src="images/careersBodyguard2.png" alt="Armed Bodyguard">
                 </div>
             </div>
 
-            <div class="jobRequirements">
+
+
+            <div class="jobRequirements-full">
                 <h1>Job Requirements</h1>
                 <div class="requirement-area">
                     <div class="requirement">
@@ -91,77 +93,63 @@
                     </div>
 
                     <div class="requirement">
-                        <span>Regular Duties:</span> Ensure safety of client(s), Monitoring the environment where the
+                        <span>Regular Duties:</span> Ensure safety of client(s), Monitoring the environment where
+                        the
                         client(s) are
-                        located, Securing public locations before a client attends public events such as award shows,
+                        located, Securing public locations before a client attends public events such as award
+                        shows,
                         conferences or other public appearances, Managing large crowds, and Identifying suspicious
                         behavior
-                        or unauthorized people, Checking for vulnerabilities athe the client’s home and public venues
+                        or unauthorized people, Checking for vulnerabilities athe the client’s home and public
+                        venues
                     </div>
 
-                    <div class="requirement">
-                        <span>Benefits:</span> Medical & life insurance coverage, Worldwide traveling, paid vacations,
+                    <div class="requirement" id="benfits">
+                        <span style="text-decoration: underline;
+                        font-size: larger;">Benefits:</span> Medical & life insurance coverage, Worldwide traveling,
+                        paid
+                        vacations,
                         Competitive
                         pay.
-
                     </div>
-                    <div class="hiring-info">
-                        <div class="download-button">
-                            <a download href="documents/A-List Protection Job application.docx">
-                                Download and Fill out the Job Application
-                        </div>
-                        <div class="job-info" style="font-size: large;">
-                            If you have any question
-                            <a href="support.html" style="font-size: large;">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="jobRequirements-full">
-                    <h1>Job Requirements</h1>
-                    <div class="requirement-area">
-                        <div class="requirement">
-                            <span>Qualifications for Employment:</span> At least a highschool education,
-                            a military background or knowledge of law enforcement procedures, Must undergo rigorous
-                            training,
-                            Must know about first aid, armed and unarmed combat techniques along with firearm tactics,
-                            Martial
-                            arts training, self-defense training, and need to be fit.
-                        </div>
-
-                        <div class="requirement">
-                            <span>Regular Duties:</span> Ensure safety of client(s), Monitoring the environment where
-                            the
-                            client(s) are
-                            located, Securing public locations before a client attends public events such as award
-                            shows,
-                            conferences or other public appearances, Managing large crowds, and Identifying suspicious
-                            behavior
-                            or unauthorized people, Checking for vulnerabilities athe the client’s home and public
-                            venues
-                        </div>
-
+                    <div class="special-lineup">
                         <div class="requirement">
                             <span>Benefits:</span> Medical & life insurance coverage, Worldwide traveling, paid
                             vacations,
                             Competitive
                             pay.
-
-                        </div>
-                        <div class="hiring-info">
-                            <div class="download-button">
-                                <a href="documents/A-List Protection Job application.docx" download>
-                                    Download and Fill out the Job Application
-                                </a>
-                            </div>
-
-                            <div class="job-info">
-                                <p>If you have any question</p>
-                                <a href="support.html" style="font-size: large;">Contact Us</a>
-                            </div>
                         </div>
 
+                        <div class="download-button">
+                            <a href="documents/A-List Protection Job application.docx" onclick="myFunction()"
+                                download>Download Job
+                                Application</a>
+                        </div>
+
+                        <div id="snackbar">Download Complete</div>
+
+                        <div class="job-info">
+                            <p>If you have any question</p>
+                            <a href="support.html" style="font-size: large;">Contact Us</a>
+                        </div>
                     </div>
+
+                    <div class="hiring-info">
+                        <div class="download-button">
+                            <a href="documents/A-List Protection Job application.docx" onclick="mySnackbarPopupSmall()"
+                                download>Download and Fill
+                                out the Job Application</a>
+                        </div>
+
+                        <div id="snackbar-small">Download Complete</div>
+                        <div class="job-info">
+                            <p>If you have any question</p>
+                            <a href="support.html" style="font-size: large;">Contact Us</a>
+                        </div>
+                    </div>
+
+                </div>
     </main>
 
     <footer>
@@ -171,4 +159,5 @@
             <p>Creator: David Nevarez, Nysa Clark, Jimmy Williams</p>
         </div>
     </footer>
+    <script src="careers.js"></script>
 </body>

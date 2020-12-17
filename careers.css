@@ -389,10 +389,6 @@ img[src="images/careersBodyguard2.png"] {
 
 /* ^^^ Job Offers Area Layout ^^^ */
 
-.jobRequirements {
-    display: none;
-}
-
 .jobRequirements-full {
     display: flex;
     flex-flow: column nowrap;
@@ -400,22 +396,64 @@ img[src="images/careersBodyguard2.png"] {
 
 .requirement-area {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
 }
 
-.requirement-area .requirement {
-    width: calc(33.33% - 100px);
+.requirement, .hiring-info {
+    width: 200px;
     height: fit-content;
-    border: 1.5px solid black;
-    border-radius: 1rem;
     padding: 10px;
-    margin: 10px;
+    border: 2px solid black;
+    border-radius: 1rem;
 }
 
-.requirement-area .requirement:hover {
-    background-color: #3a77bd;
-    opacity: .8;
+.special-lineup {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.special-lineup .requirement {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.special-lineup .download-button {
+    border: 2px solid black;
+    border-radius: .5rem;
+    padding: 10px;
+    background-color: #63a2e9;
+}
+
+.special-lineup .download-button a {
+    text-decoration: none;
+    color: rgb(201, 3, 3);
+}
+
+.special-lineup .job-info a {
+    text-decoration: none;
+    color: maroon;
+    text-align: center;
+    padding-top: 5px;
+    padding: 2px;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 1;
+}
+
+.special-lineup .job-info a:hover {
+    background-color: maroon;
+    border: none;
+    border-radius: .5rem;
+    padding: 2px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
 }
 
 .requirement span {
@@ -423,19 +461,79 @@ img[src="images/careersBodyguard2.png"] {
     font-size: larger;
 }
 
-.hiring-info {
-    display: flex;
-    flex-flow: column nowrap;
-    line-height: center;
+.hiring-info, #benfits {
+    display: none;
 }
 
-.hiring-info .download-button {
-    border: 1px solid black;
+/* Snackbar CSS */
+
+.special-lineup #snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #2E4661;
+    color: var(--White-Text-Color);
     text-align: center;
-    text-decoration: none;
-    background-color: lightblue;
-    padding: 5px;
+    border-radius: 1rem;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
 }
+
+.special-lineup #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+/* ^^^ Snackbar CSS ^^^ */
 
 .wiggle {
     animation: wiggle 2s infinite;
@@ -680,28 +778,41 @@ img[src="images/careersBodyguard2.png"] {
         height: 32px;
     }
     .jobRequirements-full {
-        display: none;
-    }
-    .jobRequirements {
         display: flex;
         flex-flow: column nowrap;
         padding: 10px;
     }
-    .jobRequirements .requirement-area {
+    .jobRequirements-full .requirement-area {
         display: flex;
         flex-flow: column nowrap;
     }
-    .jobRequirements .requirement {
+    .requirement-area {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .jobRequirements-full .requirement {
         height: fit-content;
         border: 1.5px solid black;
         border-radius: 1rem;
         padding: 10px;
-        margin: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: auto;
+        margin-left: auto;
         width: calc(100% - 40px);
     }
     .hiring-info {
         display: flex;
         flex-flow: column nowrap;
+        border: none;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #benfits {
+        display: flex;
     }
     .hiring-info .download-button {
         margin: auto;
@@ -719,9 +830,107 @@ img[src="images/careersBodyguard2.png"] {
         text-align: center;
         color: black;
     }
+    .hiring-info .job-info p {
+        text-decoration: none;
+        color: black;
+    }
     .hiring-info .job-info a {
         text-decoration: none;
+        color: maroon;
+        text-align: center;
+        padding: 2px;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 1;
     }
+    .hiring-info .job-info a:hover {
+        background-color: maroon;
+        border: none;
+        border-radius: .5rem;
+        padding: 2px;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 0.6;
+        transition: 0.3s;
+    }
+    .special-lineup {
+        display: none;
+    }
+    .hiring-info .download-button {
+        border: 2px solid black;
+        border-radius: .5rem;
+        padding: 10px;
+        background-color: #63a2e9;
+    }
+    .hiring-info .download-button a {
+        text-decoration: none;
+        color: rgb(201, 3, 3);
+    }
+    /* Snackbar CSS */
+    .hiring-info #snackbar-small {
+        visibility: hidden;
+        margin-left: -125px;
+        background-color: #2E4661;
+        color: var(--White-Text-Color);
+        text-align: center;
+        border-radius: 1rem;
+        padding: 16px;
+        position: fixed;
+        z-index: 1;
+        left: 50%;
+        bottom: 30px;
+        font-size: 17px;
+    }
+    .hiring-info #snackbar-small.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        /* height: 100px;
+        width: fit-content; */
+    }
+    @-webkit-keyframes fadein {
+        from {
+            bottom: 0;
+            opacity: 0;
+        }
+        to {
+            bottom: 30px;
+            opacity: 1;
+        }
+    }
+    @keyframes fadein {
+        from {
+            bottom: 0;
+            opacity: 0;
+        }
+        to {
+            bottom: 30px;
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes fadeout {
+        from {
+            bottom: 30px;
+            opacity: 1;
+        }
+        to {
+            bottom: 0;
+            opacity: 0;
+        }
+    }
+    @keyframes fadeout {
+        from {
+            bottom: 30px;
+            opacity: 1;
+        }
+        to {
+            bottom: 0;
+            opacity: 0;
+        }
+    }
+    /* ^^^ Snackbar CSS ^^^ */
 }
 
 /* ^^^ Main Body CSS Code ^^^ */
