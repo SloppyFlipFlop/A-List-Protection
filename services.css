@@ -197,6 +197,10 @@ body {
     display: inline-block;
 }
 
+.TopArea ul {
+    margin-right: 80px;
+}
+
 @keyframes S {
     0% {
         opacity: 0;

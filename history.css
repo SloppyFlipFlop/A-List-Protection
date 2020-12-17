@@ -178,6 +178,7 @@ body {
     width: calc(100vw - 40px);
     background: var(--White-Background-Color);
     color: var(--White-Background-Color);
+    width: calc(100% - 40px);
     /* background: url(images/Security_Picture.png);
     background-repeat: no-repeat;
     background-size: cover; */
@@ -191,6 +192,10 @@ body {
 .Top-image h1 {
     font-size: 5em;
     display: inline-block;
+}
+
+.Top-image ul {
+    margin-right: 80px;
 }
 
 @keyframes h {
