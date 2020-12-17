@@ -278,13 +278,14 @@ body {
     border: 1px solid black;
     border-radius: 1rem;
     margin-left: 20px;
-    margin-right: 25px;
+    margin-right: 20px;
     padding: 20px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     justify-items: center;
     align-content: center;
+    min-width: 597px;
 }
 
 .job-area h1 {
@@ -345,6 +346,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-width: 160px;
 }
 
 .job-offer h1 {
@@ -381,4 +383,12 @@ img[src="images/careersBodyguard2.png"]{
 }
 /* ^^^ Job Offers Area Layout ^^^ */
 
+.jobRequirements{
+    margin-top: 20px;
+}
+
+.jobRequirements a {
+    color: maroon;
+    text-decoration: none;
+}
 /* ^^^ Main Body CSS Code ^^^ */

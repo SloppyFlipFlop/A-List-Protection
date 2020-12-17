@@ -178,6 +178,7 @@ body {
     background-color: var(--White-Background-Color);
     border: 1px solid black;
     border-radius: 1rem;
+    min-width: 650px;
 }
 
 .header-message {
@@ -227,6 +228,7 @@ body {
     border-radius: 1rem;
     font-size: 15px;
     background-color: var(--White-Background-Color);
+    min-width: 630px;
 }
 
 /* ^^^ Main Layout ^^^ */
