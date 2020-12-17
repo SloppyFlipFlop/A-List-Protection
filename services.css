@@ -34,7 +34,7 @@ header {
     left: 0;
     top: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 2px;
     margin: 0px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -51,7 +51,7 @@ header * {
 }
 
 header img {
-    margin-left: 50px;
+    margin-left: 22px;
     height: 50px;
     opacity: 1;
     transition: all .2 ease-out;
@@ -415,7 +415,7 @@ button {
 
 /* Responsive Design */
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 815px) {
     /* Top Image Layout */
     .TopArea {
         font-family: 'JetBrains Mono', monospace;
@@ -430,7 +430,7 @@ button {
         border: 1px solid black;
         border-radius: 1rem;
         text-align: center;
-        min-width: 637px;
+        /* min-width: 637px; */
     }
     .Top-image h1 {
         font-size: 5em;

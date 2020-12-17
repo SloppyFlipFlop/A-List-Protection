@@ -338,7 +338,7 @@ body {
         margin: 0;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         z-index: 50;
-        min-width: 637px;
+        min-width: calc(100vw - 40px);
     }
     header * {
         padding: 1px;
@@ -451,4 +451,93 @@ body {
         width: 32px;
         height: 32px;
     }
+    /* Top Image Layout */
+    .Top-image {
+        font-family: 'JetBrains Mono', monospace;
+        /* width: calc(100vw - 40px); */
+        width: calc(100vw - 40px);
+        background: var(--White-Background-Color);
+        color: var(--White-Background-Color);
+        /* background: url(images/Security_Picture.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+        letter-spacing: 5px;
+        /* margin: 10px 20px 10px 20px; */
+        border: 1px solid black;
+        border-radius: 1rem;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .Top-image h1 {
+        font-size: 5em;
+        display: inline-block;
+    }
+    @keyframes h {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            -ms-transform: translate(40px, 0px);
+            /* IE 9 */
+            -webkit-transform: translate(40px, 0px);
+            /* Safari */
+            transform: translate(1rem, 0px);
+            /* Standard syntax */
+        }
+        from {
+            color: var(--White-Background-Color);
+        }
+        to {
+            color: #4C75A3;
+            text-shadow: 0px 2px 5px black;
+        }
+    }
+    .h, .i, .s, .t, .o, .r, .y {
+        animation: h 2.5s ease-in-out forwards;
+        animation-iteration-count: 1;
+    }
+    .h {
+        animation-delay: 0.4s;
+        /* transform: rotate3d(10, 10, 10, 65deg); */
+        -webkit-transform: rotateZ(20deg);
+        /* Safari */
+        transform: rotateZ(20deg);
+    }
+    .i {
+        animation-delay: 0.3s;
+        -webkit-transform: rotateZ(20deg);
+        /* Safari */
+        transform: rotateZ(20deg);
+    }
+    .s {
+        animation-delay: 0.2s;
+        -webkit-transform: rotateZ(20deg);
+        /* Safari */
+        transform: rotateZ(20deg);
+    }
+    .t {
+        animation-delay: 0.1s;
+        -webkit-transform: rotateZ(20deg);
+        /* Safari */
+        transform: rotateZ(20deg);
+    }
+    .o {
+        animation-delay: 0s;
+        -webkit-transform: rotateZ(20deg);
+        /* Safari */
+        transform: rotateZ(20deg);
+    }
+    .r {
+        animation-delay: -0.1s;
+        -webkit-transform: rotateZ(20deg);
+        /* Safari */
+        transform: rotateZ(20deg);
+    }
+    .y {
+        animation-delay: -0.2s;
+        -webkit-transform: rotateZ(20deg);
+        /* Safari */
+        transform: rotateZ(20deg);
+    }
+    /* ^^^ Top Image Layout ^^^ */
 }
