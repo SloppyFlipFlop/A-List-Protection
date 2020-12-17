@@ -330,7 +330,7 @@ body {
 
 /* ^^^ MainBody CSS Code ^^^ */
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 870px) {
     header {
         background-color: var(--Header-Background-color);
         color: var(--White-Text-Color);
@@ -405,6 +405,7 @@ body {
         position: relative;
         right: 1.5px;
         top: 1.5px;
+        color: maroon;
     }
     .show {
         display: block;
