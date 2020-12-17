@@ -288,8 +288,7 @@ body {
 }
 
 .About-Us-Summary-Area h1 {
-    text-align: left;
-    margin-left: 18%;
+    text-align: center;
     color: var(--Special-Text-Color);
     font-family: 'Do Hyeon', sans-serif;
     font-size: 40px;
@@ -298,7 +297,7 @@ body {
 .Summary-Area {
     display: flex;
     flex-flow: row nowrap;
-    padding: 20px;
+    padding: 30px;
 }
 
 .Summary-Area .About-Us-Summary {
@@ -308,12 +307,16 @@ body {
 
 .Summary-Area img {
     max-width: 50%;
-    height: auto;
+    height: 400px;
     margin-right: auto;
-    margin-left: 20px;
+    margin-left: auto;
     border-radius: 1rem;
     opacity: 1;
     transition: all .2 ease-out;
+}
+
+.About-Us-Summary img {
+    display: none;
 }
 
 .Summary-Area img:hover {
@@ -545,4 +548,26 @@ body {
         transform: rotateZ(20deg);
     }
     /* ^^^ Top Image Layout ^^^ */
+    .About-Us-Summary-Area {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .About-Us-Summary-Area h1 {
+        text-align: center;
+    }
+    .Summary-Area .About-Us-Summary {
+        width: max-content;
+    }
+    .Summary-Area img {
+        display: none;
+    }
+    .About-Us-Summary img {
+        display: flex;
+        float: left;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        margin-right: 20px;
+        border-radius: 1.5rem;
+    }
 }
