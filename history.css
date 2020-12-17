@@ -195,7 +195,7 @@ body {
 }
 
 .Top-image ul {
-    margin-right: 80px;
+    margin-right: 35px;
 }
 
 @keyframes h {
@@ -285,6 +285,7 @@ body {
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 30px;
+    min-width: 500px;
 }
 
 .About-Us-Summary-Area h1 {
@@ -475,6 +476,7 @@ body {
         border-radius: 1rem;
         text-align: center;
         vertical-align: middle;
+        min-width: 500px;
     }
     .Top-image h1 {
         font-size: 5em;

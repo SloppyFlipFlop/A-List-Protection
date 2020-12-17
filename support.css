@@ -171,9 +171,8 @@ body {
 
 .message-wrapper {
     width: calc(100vw - 60px);
-    margin-right: 20px;
-    margin-left: 20px;
-    height: 80px;
+    margin: 10px 20px 20px 20px;
+    height: 90px;
     text-align: center;
     background-color: var(--White-Background-Color);
     border: 1px solid black;
